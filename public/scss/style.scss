@@ -1,21 +1,59 @@
-@import "theme/variables";
-@import "theme/mixins";
-@import "theme/reset";
-@import "theme/header";
-@import "theme/responsive";
-@import "theme/section-intro";
-@import "theme/home";
-@import "theme/btn";
-@import "theme/blog";
-@import "theme/contact";
-@import "theme/category";
-@import "theme/confirmation";
-@import "theme/tracking";
-@import "theme/checkout";
-@import "theme/login";
-@import "theme/register";
-@import "theme/instagram";
-@import "theme/cart";
-@import "theme/single-product";
-@import "theme/footer";
+/* Theme Description
+-------------------------------------------------
 
+	  Theme Name:
+	  Author:
+	  Support:
+	  Description:
+	  Version:
+	  
+------------------------------------------------- 
+*/
+
+/* CSS Index
+-------------------------------------------------
+
+	1. Theme default css
+	2. header
+	3. slider
+	4. about-area
+	5. features-box
+	6. department
+	7. team
+	8. video-area
+	9. counter
+	10. footer
+
+-------------------------------------------------
+*/
+
+// Default
+	@import 'variables';
+	@import 'mixins';
+	@import 'overlay';
+	@import 'common';
+	@import 'color';
+
+	
+// Homepage1
+	@import 'headerMenu';
+	@import 'h1-hero';
+	@import 'about';
+	@import 'team';
+	@import 'courses';
+	@import 'load-balnceing';
+	@import 'top-sub';
+	@import 'services_section';
+	@import 'footer';
+
+	
+// inner Page
+	@import 'login';
+
+
+// Default Element Page
+	@import 'blog_page';
+	@import 'contact';
+	@import 'bradcam';
+	@import 'extend';
+	@import 'elements';

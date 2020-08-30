@@ -16,20 +16,10 @@ app.set('view engine', 'hbs');
 
 app.use('/', require('./routes/indexRouter'));
 
+
 app.get('/:page', function (req, res) {
-    let banners = {
-        blog: 'Our Blog',
-        cart: 'Shopping Cart',
-        checkout: 'Checkout',
-        confirmation: 'Confirmation',
-        contact: 'Contact',
-        login: 'Login',
-        register: 'Register',
-        order: 'Order',
-        category: 'Category'
-    }
     let page = req.params.page;
-    res.render(page, { banner: banners[page] });
+    res.render(page);
 });
 
 

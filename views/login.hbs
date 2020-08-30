@@ -1,50 +1,44 @@
-{{> banner }}
+<!-- ? Preloader Start -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/img/logo/loder.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader Start-->
 
-<!--================Login Box Area =================-->
-<section class="login_box_area section-margin">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="login_box_img">
-					<div class="hover">
-						<h4>New to our website?</h4>
-						<p>There are advances being made in science and technology everyday, and a good example of this
-							is the</p>
-						<a class="button button-account" href="/users/register">Create an Account</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="login_form_inner">
-					<h3>Log in to enter</h3>
-					<form class="row login_form" action="/users/login" id="contactForm" method="POST">
-						{{#if message}}
-							<div class="col-md-12 form-group alert {{type}}">
-								<strong>{{message}}</strong>>
-							</div>
-						{{/if}}
-						<div class="col-md-12 form-group">
-							<input type="email" class="form-control" id="username" name="username" placeholder="Email Address"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
-						</div>
-						<div class="col-md-12 form-group">
-							<input type="password" class="form-control" id="password" name="password" placeholder="Password"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-						</div>
-						<div class="col-md-12 form-group">
-							<div class="creat_account">
-								<input type="checkbox" id="keepLoggedIn" name="keepLoggedIn">
-								<label for="keepLoggedIn">Keep me logged in</label>
-							</div>
-						</div>
-						<div class="col-md-12 form-group">
-							<button type="submit" value="submit" class="button button-login w-100">Log In</button>
-							<a href="#">Forgot Password?</a>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================End Login Box Area =================-->
+
+<main class="login-body" data-vide-bg="/img/login-bg.mp4">
+    <!-- Login Admin -->
+    <form class="form-default" action="login-bg.mp4" method="POST">
+
+        <div class="login-form">
+            <!-- logo-login -->
+            <div class="logo-login">
+                <a href="/index"><img src="/img/logo/loder.png" alt=""></a>
+            </div>
+            <h2>Login Here</h2>
+            <div class="form-input">
+                <label for="name">Email</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-input">
+                <label for="name">Password</label>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-input pt-30">
+                <input type="submit" name="submit" value="login">
+            </div>
+
+            <!-- Forget Password -->
+            <a href="#" class="forget">Forget Password</a>
+            <!-- Forget Password -->
+            <a href="/register" class="registration">Registration</a>
+        </div>
+    </form>
+    <!-- /end login form -->
+</main>
