@@ -1,0 +1,31 @@
+.outline-text {
+  color: rgb(80, 80, 80);
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+.learn-outline-list {
+  background-color: #FFF;
+}
+
+.learn-outline-list a {
+  color: black;
+}
+
+.right-content {
+  width: 35%;
+}
+
+.left-content {
+  width: 65%;
+}
+
+.father-container {
+  display: inline-block;
+}
+
+.video {
+  margin-left: 30%;
+}
